@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { NuevoContactoPage } from '../nuevo-contacto/nuevo-contacto';
 
 /**
  * Generated class for the LibretaContactosPage page.
@@ -20,6 +21,10 @@ export class LibretaContactosPage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad LibretaContactosPage');
+  }
+
+  onLoadContactosPage(){
+    this.navCtrl.push(NuevoContactoPage);
   }
 
 }

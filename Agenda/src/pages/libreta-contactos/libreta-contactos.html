@@ -6,7 +6,15 @@
 -->
 <ion-header>
   <ion-navbar>
-    <ion-title>libreta-contactos</ion-title>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-buttons end>
+        <button ion-button icon-only (click)="onLoadContactosPage()">
+          <ion-icon name="add"></ion-icon>
+        </button>
+      </ion-buttons>    
+    <ion-title>Libreta de contactos</ion-title>
   </ion-navbar>
 </ion-header>
 
